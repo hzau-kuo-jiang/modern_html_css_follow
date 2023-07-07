@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Float & Align</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			line-height: 1.5;
+		}
+		
+		.container {
+			margin: 0 auto;
+			max-width: 960px;
+		}
+		
+		.box {
+			background: #f4f4f4;
+			border: 1px solid #ddd;
+			margin-bottom: 10px;
+			padding: 20px;
+		}
+		
+		.box p {
+			text-align: justify;
+		}
+		
+		.clr {
+			clear: both;
+		}
+		
+		#box-2 {
+			float: left;
+			width: 65%;
+		}
+		
+		#box-3 {
+			float: right;
+			width: 30%;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="box" id="box-1">
+		<h3>Heading</h3>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores culpa dolore dolores eius enim et fuga
+			inventore iure modi mollitia nesciunt officiis, quae quasi sequi temporibus totam vel! Asperiores.
+		</p>
+	</div>
+	<div class="box" id="box-2">
+		<h3>Heading</h3>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores culpa dolore dolores eius enim et fuga
+			inventore iure modi mollitia nesciunt officiis, quae quasi sequi temporibus totam vel! Asperiores.
+		</p>
+	</div>
+	<div class="box" id="box-3">
+		<h3>Heading</h3>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores culpa dolore dolores eius enim et fuga
+			inventore iure modi mollitia nesciunt officiis, quae quasi sequi temporibus totam vel! Asperiores.
+		</p>
+	</div>
+	<div class="clr"></div>
+	<div class="box" id="box-4">
+		<h3>Heading</h3>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores culpa dolore dolores eius enim et fuga
+			inventore iure modi mollitia nesciunt officiis, quae quasi sequi temporibus totam vel! Asperiores.
+		</p>
+	</div>
+</div>
+</body>
+</html>

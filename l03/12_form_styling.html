@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+	<meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+	<title>Form Styling</title>
+	<link
+			href="https://fonts.googleapis.com/css?family=Raleway"
+			rel="stylesheet"
+	/>
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		
+		body {
+			background-color: #344a72;
+			font-family: 'Raleway', sans-serif;
+			line-height: 1.5;
+		}
+		
+		a {
+			text-decoration: none;
+		}
+		
+		#container {
+			margin: auto;
+			max-width: 400px;
+			padding: 20px;
+		}
+		
+		.form-wrap {
+			background-color: #fff;
+			padding: 20px;
+		}
+		
+		.form-wrap h1,
+		.form-wrap p {
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		
+		.form-wrap .form-group {
+			margin-bottom: 15px;
+		}
+		
+		.form-wrap .form-group label {
+			display: block;
+			margin-bottom: 5px;
+		}
+		
+		.form-wrap .form-group input {
+			border: 1px solid #ccc;
+			padding: 10px;
+			width: 100%;
+		}
+		
+		.form-wrap button {
+			background-color: #49c1a2;
+			border: none;
+			border-radius: 4px;
+			color: #fff;
+			cursor: pointer;
+			display: block;
+			padding: 10px;
+			width: 100%;
+		}
+		
+		.form-wrap button:hover {
+			background-color: #37a08e;
+		}
+		
+		.form-wrap .bottom-text {
+			font-size: 12px;
+			margin-top: 15px;
+		}
+		
+		footer {
+			color: #ffffff;
+			margin-top: 20px;
+			text-align: center;
+		}
+		
+		footer a {
+			color: #49c1a2;
+		}
+	</style>
+</head>
+<body>
+<div id="container">
+	<div class="form-wrap">
+		<h1>Sign Up</h1>
+		<p>It's free and only takes a minute</p>
+		<form>
+			<div class="form-group">
+				<label for="first-name">First Name</label>
+				<input id="first-name" name="firstName" type="text"/>
+			</div>
+			<div class="form-group">
+				<label for="last-name">Last Name</label>
+				<input id="last-name" name="lastName" type="text"/>
+			</div>
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input id="email" name="email" type="email"/>
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label>
+				<input id="password" name="password" type="password"/>
+			</div>
+			<div class="form-group">
+				<label for="password2">Confirm Password</label>
+				<input id="password2" name="pasword2" type="password"/>
+			</div>
+			<button class="btn" type="submit">Sign Up</button>
+			<p class="bottom-text">
+				By clicking the Sign Up button, you agree to our
+				<a href="#">Terms & Conditions</a> and
+				<a href="#">Privacy Policy</a>
+			</p>
+		</form>
+	</div>
+	<footer>
+		<p>Already have an account? <a href="#">Login Here</a></p>
+	</footer>
+</div>
+</body>
+</html>
