@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+	      name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<title>Forms & Input</title>
+</head>
+<body>
+<form action="process.php">
+	<!-- 	Text -->
+	<div>
+		<label for="name">Name</label> <br>
+		<input id="name" name="name" type="text" value="John Doe">
+	</div>
+	<!-- 	Email -->
+	<div>
+		<label for="email">Email</label> <br>
+		<input id="email" name="email" placeholder="Enter your email" type="email">
+	</div>
+	<!-- 	Message -->
+	<div>
+		<label for="message">Message</label> <br>
+		<textarea id="message" name="message" rows="5"></textarea>
+	</div>
+	<!-- 	select -->
+	<div>
+		<label for="sex"></label>
+		<select id="sex" name="sex">
+			<option value="male">Male</option>
+			<option selected value="female">female</option>
+			<option value="other">Other</option>
+		</select>
+	</div>
+	<!-- 	number -->
+	<div>
+		<label for="age">Age</label> <br>
+		<input id="age" name="age" type="number">
+	</div>
+	<!-- 	date -->
+	<div>
+		<label for="birthdate">Birthdate</label> <br>
+		<input id="birthdate" name="birthdate" type="date">
+	</div>
+	<!-- 	check box -->
+	<div>
+		<label for="membership">Membership</label> <br>
+		<input id="membership" name="membership" type="radio" value="simple"> Simple
+		<input checked id="standard" name="membership" type="radio" value="standard"> Standard
+		<input id="premium" name="membership" type="radio" value="super"> Super
+	</div>
+	<div>
+		<label for="favorite_fruit">Favorite Fruit</label> <br>
+		<input id="favorite_fruit" name="favorite_fruit[]" type="checkbox" value="apple"> Apple
+		<input id="favorite_fruit" name="favorite_fruit[]" type="checkbox" value="orange"> Orange
+		<input id="favorite_fruit" name="favorite_fruit[]" type="checkbox" value="banana"> Banana
+	</div>
+	<input type="submit" value="Submit">
+	<!-- 	using button tag -->
+	<button type="reset">Reset</button>
+</form>
+</body>
+</html>
