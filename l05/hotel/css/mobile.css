@@ -1,0 +1,179 @@
+/* Region1 header */
+
+/* 1 .main-header */
+.main-header {
+	
+}
+
+/* 2 .navbar */
+
+/* 3 .logo */
+.navbar .logo {
+	float: none;
+	text-align: center;
+}
+
+/* 3 ul */
+.navbar ul {
+	float: none;
+}
+
+.navbar ul li {
+	float: none;
+}
+
+.navbar li a {
+	padding: 0.5rem;
+}
+
+.navbar li:first-child ~ li {
+	border-top: 1px dotted #444;
+}
+
+/* End1 .main-header */
+
+
+/* Region1 index */
+
+
+/* Region2 showcase */
+
+/* 1 .showcase */
+
+/* 2 .showcase-container */
+
+/* 3 h1 */
+.showcase-container h2 {
+	padding-top: 2rem;
+}
+
+/* End2 showcase */
+
+
+/* Region2 .home-info */
+
+/* 1 .home-info */
+.home-info {
+	height: 27rem;
+}
+
+/* 2 .info-img */
+.info-img {
+	display: none;
+}
+
+/* 2 .info-content */
+.info-content {
+	float: none;
+	height: 100%;
+	width: 100%;
+}
+
+/* End2 .home-info */
+
+
+/* Region2 .features */
+
+/* 1 .features */
+
+/* 2 .box */
+.features .box {
+	float: none;
+	width: 100%;
+}
+
+.features .box:nth-child(2) {
+	background-color: #f7c08a;
+}
+
+/* 3 .fas */
+.features .fas {
+	color: #333;
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+/* 3 h3 */
+.features h3 {
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+/* 3 p */
+.features p {
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+/* End2 .features */
+
+/* End1 index */
+
+
+/* Region1 about */
+
+/* Region2 .about-info */
+
+/* 1 .about-info */
+
+/* 2 .info-container */
+
+/* 3 .info-left */
+.about-info .info-left {
+	float: none;
+	width: 100%;
+}
+
+/* 4 h1 */
+.about-info h1 {
+	text-align: center;
+}
+
+/* 3 .info-right */
+.about-info .info-right {
+	float: none;
+	width: 100%;
+}
+
+/* 4 img */
+.about-info img {
+	width: 70%;
+}
+
+/* End2 .about-info */
+
+
+/* Region2 .testimonials */
+
+/* 1 .testimonials */
+.testimonials {
+	height: 100%;
+}
+
+/* End2 .testimonials */
+
+/* End1 about */
+
+
+/* Region1 contact */
+
+/* Region2 .contact-info */
+
+/* 1 .contact-info */
+
+/* 2 .info-container */
+
+/* 3 .info-box */
+.contact-info .info-box {
+	float: none;
+	padding: 2rem 2rem;
+	width: 100%;
+}
+
+.contact-info .info-box:first-child ~ .info-box {
+	border-top: 1px dotted #444;
+}
+
+/* End2 .contact-info */
+
+/* End1 contact */
