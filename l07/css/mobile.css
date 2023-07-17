@@ -1,0 +1,108 @@
+/* Region1 .what */
+
+/* 1 .what */
+
+/* 2 .container */
+
+/* 3 .items */
+.what .items {
+	display: block;
+	padding: 1rem;
+}
+
+/* 4 .item */
+.what .item {
+	display: flex;
+	text-align: left;
+}
+
+/* 5 .fas */
+.what .item .fas {
+	align-self: center;
+	margin-bottom: 0;
+	margin-right: 1.3rem;
+}
+
+/* End1 .what */
+
+
+/* Region1 smartphones */
+
+@media (max-width: 500px) {
+	
+	/* Region2 utility */
+	/* 1 l-heading */
+	.l-heading {
+		font-size: 3rem;
+	}
+	
+	/* End2 utility */
+	/* Region2 .navbar */
+	/* 1 .navbar */
+	.navbar {
+		align-items: center;
+		flex-direction: column;
+	}
+	
+	/* 2 .logo */
+	.navbar .logo {
+		margin-bottom: .5rem;
+	}
+	
+	/* 2 ul */
+	.navbar ul {
+		padding: .5rem;
+	}
+	
+	/* End2 .navbar */
+	/* Region2 .showcase */
+	/* 1 .showcase */
+	.showcase {
+		margin-top: -3.5rem;
+	}
+	
+	/* End2 .showcase */
+	/* Region2 .who */
+	/* 1 .who */
+	.who {
+		display: block;
+	}
+	
+	/* 2 .who-img */
+	.who .who-img {
+		display: none;
+	}
+	
+	/* End2 .who */
+	/* Region2 .clients */
+	/* 1 .clients */
+	/* 2 .container */
+	/* 3 .items */
+	/* 4 .item */
+	.clients .item:last-child {
+		display: none;
+	}
+	
+	/* 5 img */
+	.clients .item img {
+		width: 80%;
+	}
+	
+	/* End2 .clients */
+	/* Region2 .contact */
+	/* 1 .contact */
+	.contact {
+		flex-direction: column;
+	}
+	
+	/* 2 .map */
+	.contact .map {
+		border-top: .25rem solid #333333;
+		height: 14rem;
+	}
+	
+	/* End2 .contact */
+	
+}
+
+/* End1 .what */

@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Region1 basic */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin: .75rem 0;
+}
+
+ul {
+	list-style: none;
+}
+
+/* End1 basic */
+
+
+/* Region1 utility */
+
+/*
+ a b c d e
+ f g h i j
+ k l m n o
+ p q r s t
+ u v w x y
+ z
+*/
+
+/* 1 .bg-light */
+.bg-light {
+	background-color: #f4f4f4;
+	color: #333333;
+}
+
+/* 1 .bg-dark */
+.bg-dark {
+	background-color: #333333;
+	color: #ffffff;
+}
+
+/* 1 .bg-primary */
+.bg-primary {
+	background-color: #93cb52;
+	color: #ffffff;
+}
+
+/* 1 .btn */
+.btn {
+	background-color: #93cb52;
+	border: none;
+	border-radius: .25rem;
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 1rem;
+	padding: .75rem 1.5rem;
+	transition: opacity .2s ease-in-out;
+}
+
+.btn:hover {
+	opacity: .8;
+}
+
+/* 1 .btn-dark */
+.btn-dark {
+	background-color: #333333;
+	color: #ffffff;
+}
+
+/* 1 .container */
+.container {
+	margin: auto;
+	max-width: 1100px;
+	overflow: hidden;
+	padding: 0 2rem;
+}
+
+/* 1 .l-heading */
+.l-heading {
+	font-size: 4rem;
+	margin-bottom: 1rem;
+}
+
+/* 1 .list */
+.list {
+	margin: .5rem 0;
+}
+
+/* 2 li */
+.list li {
+	border-bottom: 1px dotted #444444;
+	padding: .5rem 0;
+}
+
+/* 1 .m-heading */
+.m-heading {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+/* 1 .p-1 */
+.p-1 {
+	padding: 1.5rem;
+}
+
+/* 1 .p-2 */
+.p-2 {
+	padding: 2rem;
+}
+
+/* 1 .p-3 */
+.p-3 {
+	padding: 3rem;
+}
+
+/* 1 .py-1 */
+.py-1 {
+	padding: 1.5rem 0;
+}
+
+/* 1 .py-2 */
+.py-2 {
+	padding: 2rem 0;
+}
+
+/* 1 .py-3 */
+.py-3 {
+	padding: 3rem 0;
+}
+
+/* 1 .text-center */
+.text-center {
+	text-align: center;
+}
+
+/* 1 .text-primary */
+.text-primary {
+	color: #93cb52;
+}
+
+/* End1 utility */
+
+
+/* Region1 .navbar */
+
+/* 1 .navbar */
+.navbar {
+	background-color: #333333;
+	color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+/* 2 ul */
+.navbar ul {
+	align-items: center;
+	display: flex;
+}
+
+/* 3 a */
+.navbar a {
+	color: #ffffff;
+	margin: 0 .25rem;
+	padding: .75rem;
+}
+
+.navbar a:hover {
+	background-color: #93cb52;
+	border-radius: .25rem;
+}
+
+/* End1 .navbar */
+
+
+/* Region1 .showcase */
+
+/* 1 .showcase */
+.showcase {
+	background: #333 url('../img/showcase.jpg') no-repeat center center/cover;
+	color: #ffffff;
+	height: 100vh;
+	position: relative;
+}
+
+/* 2 .showcase-content */
+.showcase-content {
+	align-items: center;
+	background-color: rgba(0, 0, 0, .4);
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	padding: 0 2rem;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 100%;
+}
+
+/* 3 .lead */
+.lead {
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+/* End1 .showcase */
+
+
+/* Region1 .what */
+
+/* 1 .what */
+
+/* 2 .container */
+
+/* 3 .items */
+.what .items {
+	display: flex;
+	padding: 1rem;
+}
+
+/* 4 .item */
+.what .item {
+	flex: 1;
+	padding: 1rem;
+	text-align: center;
+}
+
+/* 5 .fas */
+.what .item .fas {
+	background: #93cb52;
+	border-radius: 50%;
+	margin-bottom: 1rem;
+	padding: 1rem;
+}
+
+/* End1 .what */
+
+
+/* Region1 .who */
+
+/* 1 .who */
+.who {
+	display: flex;
+}
+
+/* 2 >div */
+.who > div {
+	flex: 1;
+}
+
+/* 2 .who-img */
+.who-img {
+	background: url('../img/people.jpg') no-repeat center center/cover;
+}
+
+/* End1 .who */
+
+
+/* Region1 .clients */
+
+/* 1 .clients */
+
+/* 2 .container */
+
+/* 3 .items */
+.clients .items {
+	display: flex;
+}
+
+/* 4 .item */
+
+/* 5 img */
+.clients .item img {
+	display: block;
+	margin: auto;
+	width: 60%;
+}
+
+/* End1 .clients */
+
+
+/* Region1 .contact */
+
+/* 1 .contact */
+.contact {
+	display: flex;
+}
+
+/* 2 >div */
+.contact > div {
+	flex: 1;
+}
+
+/* 2 .contact-form */
+
+/* 3 form */
+
+/* 4 .form-group */
+.form-group {
+	margin: .75rem;
+}
+
+/* 5 label */
+.form-group label {
+	display: block;
+}
+
+/* 6 input */
+.form-group input {
+	border: 1px solid #333333;
+	border-radius: .25rem;
+	display: block;
+	margin-top: .25rem;
+	padding: .5rem;
+	width: 100%;
+}
+
+.form-group input:focus {
+	outline: none;
+}
+
+/* 6 textarea */
+.form-group textarea {
+	border: 1px solid #333333;
+	border-radius: .25rem;
+	display: block;
+	margin-top: .25rem;
+	padding: .5rem;
+	width: 100%;
+}
+
+.form-group textarea:focus {
+	outline: none;
+}
+
+/* End1 .contact */
