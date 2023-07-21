@@ -1,0 +1,126 @@
+.menu-wrap {
+	left: 0;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+}
+
+
+.hamburger {
+	align-items: center;
+	background: var(--primary-color);
+	cursor: pointer;
+	display: flex;
+	height: 3.5rem;
+	justify-content: center;
+	left: 0;
+	padding: 1rem;
+	position: absolute;
+	top: 0;
+	width: 3.5rem;
+	z-index: 1;
+}
+
+.line {
+	align-items: center;
+	background: #ffffff;
+	display: flex;
+	flex: none;
+	height: .1rem;
+	justify-content: center;
+	position: relative;
+	transition: all .3s ease-in-out;
+	width: 100%;
+}
+
+.line::before,
+.line::after {
+	background: #ffffff;
+	content: '';
+	display: block;
+	height: inherit;
+	position: absolute;
+	transition: inherit;
+	width: inherit;
+}
+
+.line::before {
+	top: -.5rem;
+}
+
+.line::after {
+	top: .5rem;
+}
+
+.toggle:checked + .hamburger > .line {
+	transform: rotate(135deg);
+}
+
+.toggle:checked + .hamburger > .line::before,
+.toggle:checked + .hamburger > .line::after {
+	top: 0;
+	transform: rotate(90deg);
+}
+
+.toggle:checked:hover + .hamburger > .line {
+	transform: rotate(45deg);
+}
+
+.menu-wrap .menu {
+	align-items: center;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.menu::before {
+	background: var(--overlay-color);
+	border-radius: 50%;
+	content: '';
+	height: 100vw;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	transition: transform .8s ease-in-out;
+	width: 100vw;
+	z-index: -1;
+}
+
+.toggle:checked ~ .menu::before {
+	transform: translate(-50%, -50%) scale(5);
+}
+
+.menu ul {
+	list-style: none;
+	opacity: 0;
+	text-align: center;
+	transition: opacity .3s ease-in-out;
+	transition-delay: .2s;
+}
+
+.toggle:checked ~ .menu ul {
+	opacity: 1;
+	transition-delay: .5s;
+}
+
+.menu li {
+	color: #ffffff;
+	margin: 0 0 1rem 0;
+}
+
+.menu a {
+	color: inherit;
+	font-size: 1.5rem;
+	text-decoration: none;
+	transition: color .3s ease-in-out;
+}
+
+.menu a:hover {
+	color: var(--secondary-color);
+}

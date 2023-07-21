@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="style.css" rel="stylesheet">
+	<title>Presentation</title>
+	<script crossorigin="anonymous" src="https://kit.fontawesome.com/69e7ba6669.js"></script>
+</head>
+<body>
+<section class="page" id="page-1">
+	<h1>Welcome To My Presentation</h1>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at dicta, eligendi inventore ipsa iure magnam mollitia
+		nam non omnis porro quia, sint voluptas! Alias animi illo libero quas quo!
+	</p>
+	<div>
+		<a class="btn" href="#page-2">
+			Next
+			<i class="fas fa-arrow-circle-down"></i>
+		</a>
+	</div>
+</section>
+
+<section class="page" id="page-2">
+	<h1>Page 2</h1>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at dicta, eligendi inventore ipsa iure magnam mollitia
+		nam non omnis porro quia, sint voluptas! Alias animi illo libero quas quo!
+	</p>
+	<div>
+		<a class="btn btn-dark" href="#page-1">
+			<i class="fas fa-arrow-circle-up"></i>
+			Previous
+		</a>
+		<a class="btn" href="#page-3">
+			Next
+			<i class="fas fa-arrow-circle-down"></i>
+		</a>
+	</div>
+</section>
+
+<section class="page" id="page-3">
+	<h1>Page 3</h1>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at dicta, eligendi inventore ipsa iure magnam mollitia
+		nam non omnis porro quia, sint voluptas! Alias animi illo libero quas quo!
+	</p>
+	<div>
+		<a class="btn btn-dark" href="#page-2">
+			<i class="fas fa-arrow-circle-up"></i>
+			Previous
+		</a>
+		<a class="btn" href="#page-4">
+			Next
+			<i class="fas fa-arrow-circle-down"></i>
+		</a>
+	</div>
+</section>
+
+<section class="page" id="page-4">
+	<h1>Page 4</h1>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at dicta, eligendi inventore ipsa iure magnam mollitia
+		nam non omnis porro quia, sint voluptas! Alias animi illo libero quas quo!
+	</p>
+	<div>
+		<a class="btn" href="#page-3">
+			<i class="fas fa-arrow-circle-up"></i>
+			Previous
+		</a>
+	</div>
+</section>
+
+<script crossorigin="anonymous"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script !src="">
+	$(document).ready(function () {
+		$('.btn').on('click', function (e) {
+			e.preventDefault();
+			$('html, body').animate({
+				scrollTop: $($(this).attr('href')).offset().top
+			}, 500, 'linear');
+		});
+	});
+</script>
+
+</body>
+</html>
