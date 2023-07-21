@@ -63,7 +63,8 @@
 }
 
 .toggle:checked:hover + .hamburger > .line {
-	transform: rotate(45deg);
+	/*transform: rotate(45deg);*/
+	transform: rotate(225deg);
 }
 
 .menu-wrap .menu {
