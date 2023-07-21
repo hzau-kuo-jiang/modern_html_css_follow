@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>nth Child</title>
+	<style>
+		li {
+			list-style: none;
+			margin: .25rem;
+			padding: .25rem;
+		}
+		
+		li:first-child {
+			background: #ff0000;
+			color: #ffffff;
+		}
+		
+		li:last-child {
+			background: #0000ff;
+			color: #ffffff;
+		}
+		
+		li:nth-child(3) {
+			background: #00ff00;
+			color: #ffffff;
+		}
+		
+		li:nth-child(3n) {
+			background: #ff00ff;
+			color: #ffffff;
+		}
+		
+		li:nth-child(3n+7) {
+			background: #ffff00;
+			color: #ffffff;
+		}
+		
+		li:nth-child(odd) {
+			background: #00ffff;
+			color: #ffffff;
+		}
+	
+	</style>
+</head>
+<body>
+<ul>
+	<li>Item 1</li>
+	<li>Item 2</li>
+	<li>Item 3</li>
+	<li>Item 4</li>
+	<li>Item 5</li>
+	<li>Item 6</li>
+	<li>Item 7</li>
+	<li>Item 8</li>
+	<li>Item 9</li>
+	<li>Item 10</li>
+	<li>Item 11</li>
+	<li>Item 12</li>
+	<li>Item 13</li>
+	<li>Item 14</li>
+</ul>
+</body>
+</html>

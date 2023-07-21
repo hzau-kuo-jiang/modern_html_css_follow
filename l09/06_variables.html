@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Variables</title>
+	<style>
+		:root {
+			--light-color: #f4f4f4;
+			--primary-color: steelblue;
+			--secondary-color: skyblue;
+			--max-width: 1100px;
+		}
+		
+		.box {
+			--box-1-width: 1;
+			--box-2-width: 2;
+		}
+		
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		body {
+			background: var(--light-color);
+			font-family: Arial, Helvetica, sans-serif;
+			line-height: 1.5;
+		}
+		
+		header {
+			background: var(--primary-color);
+			border-bottom: .4rem solid var(--secondary-color);
+			color: var(--light-color);
+			padding: 1rem;
+			text-align: center;
+		}
+		
+		.container {
+			display: flex;
+			margin: auto;
+			max-width: var(--max-width);
+		}
+		
+		.box {
+			background: var(--primary-color);
+			border-bottom: .4rem solid var(--secondary-color);
+			color: var(--light-color);
+			margin: 1rem;
+			padding: 1rem;
+		}
+		
+		.box-1 {
+			flex: var(--box-1-width);
+		}
+		
+		.box-2 {
+			flex: var(--box-2-width);
+		}
+	
+	</style>
+</head>
+<body>
+<header>
+	<h1>CSS Variables</h1>
+</header>
+
+<div class="container">
+	<div class="box box-1">
+		<h3>Heading</h3>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, voluptate.
+		</p>
+	</div>
+	<div class="box box-2">
+		<h3>Heading</h3>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, voluptate.
+		</p>
+	</div>
+</div>
+</body>
+</html>
