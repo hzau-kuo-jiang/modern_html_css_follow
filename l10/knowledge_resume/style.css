@@ -158,7 +158,7 @@ li.show:nth-child(even) > div {
 	}
 	
 	li > div {
-		max-width: calc(100vw - 5rem);
+		max-width: calc(100vw - 6rem);
 	}
 	
 	li:nth-child(even)::before {
