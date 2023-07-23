@@ -1,0 +1,156 @@
+.main-nav .container {
+	flex-direction: column;
+	grid-gap: .3em;
+	padding: .5em 0;
+	
+}
+
+.social {
+	display: none;
+}
+
+.showcase h2 {
+	font-size: 2rem;
+}
+
+.showcase p {
+	font-size: 1rem;
+}
+
+.article-container {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.article-container a:first-child,
+.article-container a:last-child {
+	display: block;
+	grid-column: span 1;
+}
+
+.article-container a:first-child img,
+.article-container a:last-child img {
+	max-width: 100%;
+}
+
+.article-container h3 {
+	font-size: 1.4rem;
+}
+
+.article-container p {
+	font-size: 1rem;
+}
+
+.about-main p {
+	font-size: 1rem;
+}
+
+.article-main p {
+	font-size: 1rem;
+}
+
+@media screen and (max-width: 30em) {
+	
+	.btn {
+		font-size: 1rem;
+	}
+	
+	.list li {
+		font-size: 1.2rem;
+	}
+	
+	.main-nav .logo {
+		height: 4em;
+	}
+	.main-nav ul {
+		font-size: 1.2rem;
+	}
+	
+	.main-footer .container {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.main-footer .container section:nth-child(-n+2) {
+		border-bottom: 1px solid #444;
+		padding-bottom: 1.5em;
+	}
+	
+	.main-footer h3 {
+		font-size: 1.5rem;
+	}
+	
+	.main-footer p {
+		font-size: 1.2rem;
+	}
+	
+	.main-footer input {
+		margin: 1em 0 .8em;
+	}
+	
+	.main-footer .btn {
+		display: block;
+		text-align: center;
+	}
+	
+	.showcase-content {
+		flex: 1;
+	}
+	
+	.showcase p {
+		font-size: 1.2em;
+	}
+	
+	.about-main .container{
+		flex-direction: column;
+	}
+	
+	.about-main p{
+		font-size: 1.2rem;
+	}
+	
+	.about-main h3{
+		font-size: 1.5rem;
+		text-align: center;
+	}
+	
+	.article-container {
+		grid-template-columns: 1fr;
+	}
+	
+	.article-container p {
+		font-size: 1.2rem;
+	}
+	
+	.article-main {
+		padding: 1em 0;
+	}
+	
+	.article-main .container {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.article-main article section {
+		grid-gap: 1em;
+	}
+	
+	.article-main h3 {
+		font-size: 1.5rem;
+		text-align: center;
+	}
+	
+	.article-main p {
+		font-size: 1.2rem;
+	}
+	
+	.article-main li {
+		border-color: #d9d9d9;
+		text-align: center;
+	}
+	
+	.article-main li .fas {
+		display: none;
+	}
+	
+	
+}
